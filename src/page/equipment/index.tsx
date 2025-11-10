@@ -60,9 +60,9 @@ const columns:TableProps<DataType>["columns"]= [
         dataIndex: 'status',
         key: 'status',
         render: (text) => {
-            if (text == 1) {
+            if (text === 1) {
                 return <Tag color="green">In Use</Tag>
-            } else if (text == 2) {
+            } else if (text === 2) {
                 return <Tag color="yellow">Maintenance</Tag>
             } else {
                 return <Tag color="red">Damaged</Tag>

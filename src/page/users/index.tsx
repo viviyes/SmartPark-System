@@ -119,11 +119,11 @@ function Users() {
             key: "status",
             dataIndex: "status",
             render(value){
-                if(value==1){
+                if(value===1){
                     return <Tag color="green">In Business</Tag>
-                }else if(value==2){
+                }else if(value===2){
                     return <Tag color="#f50">Suspended Business</Tag>
-                }else if(value==3){
+                }else if(value===3){
                     return <Tag color="red">Closed</Tag>
                 }
             }

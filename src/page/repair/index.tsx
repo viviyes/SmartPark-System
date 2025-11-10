@@ -48,9 +48,9 @@ const columns: TableProps<DataType>['columns'] = [
         dataIndex: 'status',
         key: 'status',
         render:(text,record)=>{
-            if(text==1){
+            if(text===1){
                 return  <Tag color="#f50">Pending Repair</Tag>
-            }else if(text==2){
+            }else if(text===2){
                 return  <Tag color="#2db7f5">Repairing</Tag>
             }else{
                 return  <Tag color="green">Completed</Tag>
@@ -67,13 +67,13 @@ const columns: TableProps<DataType>['columns'] = [
         dataIndex: 'operate',
         key: 'operate',
         render: (text, record) => {
-            if(record.status=="1"){
+            if(record.status==="1"){
                 return <>
                 <Button type="primary" size="small">Assign</Button>
             </>
             }else if(record.status=="2"){
                 return <>
-                <a >Repairing...</a>
+                <button >Repairing...</button>
             </>
             }else{
                 return  <Button type="primary" size="small">Completed</Button>

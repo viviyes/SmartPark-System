@@ -147,9 +147,9 @@ function Dashboard() {
       dataIndex: "status",
       key: "status",
       render(value) {
-        if (value == 1) {
+        if (value === 1) {
           return <Tag>Pending Approval</Tag>;
-        } else if (value == 2) {
+        } else if (value === 2) {
           return <Tag color="green">Approval Passed</Tag>;
         } else {
           return <Tag color="red">Approval Rejected</Tag>;

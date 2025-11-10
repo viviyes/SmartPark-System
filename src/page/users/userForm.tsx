@@ -24,7 +24,7 @@ function UserForm(props: FormProps) {
         })
     }
     useEffect(()=>{
-        title=="新增企业"? form.resetFields():form.setFieldsValue(userData)
+        title==="新增企业"? form.resetFields():form.setFieldsValue(userData)
     },[visible])
     return <>
         <Modal

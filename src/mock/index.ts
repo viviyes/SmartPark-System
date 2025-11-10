@@ -26,7 +26,7 @@ Mock.mock("https://www.demo.com/login", "post", (options: any) => {
         btnAuth: ["add", "edit"],
       },
     };
-  } else if (username == "user" && password === "user123123") {
+  } else if (username === "user" && password === "user123123") {
     return {
       code: 200,
       message: "login success",
@@ -387,19 +387,19 @@ const customizeMenuList = [
 //Menu interface
 Mock.mock("https://www.demo.com/menu", "get", (options: any) => {
   const token = sessionStorage.getItem("token");
-  if (token == "mocktoken123456admin") {
+  if (token === "mocktoken123456admin") {
     return {
       code: 200,
       message: "request success",
       data: menuList,
     };
-  } else if (token == "mocktoken123456user") {
+  } else if (token === "mocktoken123456user") {
     return {
       code: 200,
       message: "request success",
       data: userMenuList,
     };
-  } else if (token == "mocktoken123456manager") {
+  } else if (token === "mocktoken123456manager") {
     return {
       code: 200,
       message: "request success",

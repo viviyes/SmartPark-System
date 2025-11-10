@@ -54,7 +54,7 @@ function Bill(){
             key:"status",
             width:100,
             render(value){
-                return value==1?<Tag color="green">Paid</Tag>:<Tag color="red">Unpaid</Tag>
+                return value===1?<Tag color="green">Paid</Tag>:<Tag color="red">Unpaid</Tag>
             }
         },
         {

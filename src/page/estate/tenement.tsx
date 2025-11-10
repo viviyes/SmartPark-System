@@ -37,9 +37,9 @@ const columns:TableProps<DataType>['columns']=[
         dataIndex:"status",
         key:"status",
         render:(value)=>{
-            if(value==1){
+            if(value===1){
                 return <Tag color="#f50">Under Construction</Tag>
-            }else if(value==2){
+            }else if(value===2){
                 return <Tag color="#2db7f5">Completed</Tag>
             }else{
                 return <Tag color="#87d068">In Use</Tag>

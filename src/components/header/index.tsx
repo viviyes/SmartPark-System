@@ -32,7 +32,7 @@ function MyHeader() {
     const dispatch=useDispatch()
     const navigate=useNavigate()
     const onClick:MenuProps['onClick']=({key})=>{
-       if(key=="1"){
+       if(key==="1"){
             //navigate to Personal
         navigate("/personal")
        }else{
